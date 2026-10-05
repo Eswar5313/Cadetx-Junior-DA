@@ -1,13 +1,29 @@
-# 🏗️ Heavy Warehouse Intelligence (HWI)
+<!-- ═══════════════ CAREER CONTROL TOWER · REPOSITORY · HWI ═══════════════ -->
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/Eswar5313/Eswar5313/main/assets/headers/REPO_HWI.svg" width="100%" alt="Heavy Warehouse Intelligence — Eswar Mahalingam" />
+
+<a href="https://github.com/Eswar5313"><img src="https://img.shields.io/badge/⬅-CAREER_CONTROL_TOWER-000000?style=for-the-badge&labelColor=FFFFFF" alt="CAREER CONTROL TOWER"/></a> <a href="https://eswar5313.github.io/Eswar-Master-Project-Portfolio-2026/"><img src="https://img.shields.io/badge/✦-MASTER_PORTFOLIO-000000?style=for-the-badge&labelColor=C9CDD6" alt="MASTER PORTFOLIO"/></a> <a href="https://eswar5313.github.io/Eswar-Portfolio-Lens-Index-2026/"><img src="https://img.shields.io/badge/✦-LENS_INDEX-000000?style=for-the-badge&labelColor=FFFFFF" alt="LENS INDEX"/></a> <a href="heavy-warehouse-intelligence/"><img src="https://img.shields.io/badge/✦-PROJECT_FOLDER-000000?style=for-the-badge&labelColor=FFFFFF" alt="PROJECT FOLDER"/></a> <a href="HWI_Project_Control_Book.xlsx"><img src="https://img.shields.io/badge/✦-CONTROL_BOOK-000000?style=for-the-badge&labelColor=C9CDD6" alt="CONTROL BOOK"/></a>
+
+<img src="https://img.shields.io/badge/BRANCHES-6-FFFFFF?style=for-the-badge&labelColor=000000" alt="BRANCHES: 6"/> <img src="https://img.shields.io/badge/SKUs-30-C9CDD6?style=for-the-badge&labelColor=000000" alt="SKUs: 30"/> <img src="https://img.shields.io/badge/SUPPLIERS-8-FFFFFF?style=for-the-badge&labelColor=000000" alt="SUPPLIERS: 8"/> <img src="https://img.shields.io/badge/CUSTOMERS-500-C9CDD6?style=for-the-badge&labelColor=000000" alt="CUSTOMERS: 500"/> <img src="https://img.shields.io/badge/SPRINTS-12-FFFFFF?style=for-the-badge&labelColor=000000" alt="SPRINTS: 12"/> <img src="https://img.shields.io/badge/YEARS_OF_DATA-2019–2024-C9CDD6?style=for-the-badge&labelColor=000000" alt="YEARS OF DATA: 2019–2024"/>
+
+**CadetX Virtual Work Experience · Data Analytics & Data Science · team of 3 · Eswar as Data Scientist** — inventory health · supplier reliability · demand forecasting · warehouse efficiency
+
+</div>
+
+<img src="https://raw.githubusercontent.com/Eswar5313/Eswar5313/main/assets/divider.svg" width="100%" alt="" />
+
+## 🏗️ Heavy Warehouse Intelligence (HWI)
 
 **CadetX Virtual Work Experience · Data Analytics & Data Science · 12-week agile programme**
 
+> 📁 Project code, data and docs live in [`heavy-warehouse-intelligence/`](heavy-warehouse-intelligence/) · Excel control book: [`HWI_Project_Control_Book.xlsx`](HWI_Project_Control_Book.xlsx)
+
 > A unified analytics and forecasting framework built on a heavy-equipment spare-parts supply chain — 6 Indian warehouses, 30 heavy-machinery SKUs (CAT, JCB, Komatsu, Volvo, Tata Hitachi), 8 Chinese suppliers, 500 B2B customers and 6 years (2019–2024) of purchase, sales, invoice, payment and stock-movement history.
 
-![Status](https://img.shields.io/badge/status-active-brightgreen) ![Sprint](https://img.shields.io/badge/sprint-01%2F12-navy) ![Python](https://img.shields.io/badge/python-3.10%2B-blue) ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
----
 
+<img src="https://raw.githubusercontent.com/Eswar5313/Eswar5313/main/assets/divider.svg" width="100%" alt="" />
 ## 1. Project Introduction
 
 Warehouses handling heavy goods face stock imbalance, overstocking, stockouts, poor space utilisation, unreliable suppliers and inaccurate demand forecasting. Raw operational data exists in the ERP, but without structured analysis it never becomes a decision.
@@ -22,8 +38,7 @@ Warehouses handling heavy goods face stock imbalance, overstocking, stockouts, p
 | 4 | Reduce stock risks & operational waste | Fewer stockouts, less shrinkage, fewer write-offs |
 | 5 | Support procurement & planning decisions | Reliable suppliers, optimal reorder points, safety stock |
 
----
-
+<img src="https://raw.githubusercontent.com/Eswar5313/Eswar5313/main/assets/divider.svg" width="100%" alt="" />
 ## 2. Team
 
 | Role | Name | GitHub | Responsibilities |
@@ -34,8 +49,7 @@ Warehouses handling heavy goods face stock imbalance, overstocking, stockouts, p
 
 **Scrum Master** rotates weekly — see `excel/HWI_Project_Control_Book.xlsx › 04_Sprint_Tracker` and each `sprints/week-XX/SPRINT_NOTES.md`.
 
----
-
+<img src="https://raw.githubusercontent.com/Eswar5313/Eswar5313/main/assets/divider.svg" width="100%" alt="" />
 ## 3. Repository Structure
 
 ```
@@ -88,8 +102,7 @@ heavy-warehouse-intelligence/
     └── SPRINT_NOTES_TEMPLATE.md
 ```
 
----
-
+<img src="https://raw.githubusercontent.com/Eswar5313/Eswar5313/main/assets/divider.svg" width="100%" alt="" />
 ## 4. Dataset
 
 Source: CadetX *Heavy Suppliers / Warehouse / Inventory / Customer* transactional dataset (12 CSVs + Fields Documentation).
@@ -109,7 +122,7 @@ Source: CadetX *Heavy Suppliers / Warehouse / Inventory / Customer* transactiona
 | `payments.csv` | 19,257 | One payment against an invoice | `payment_id` | invoices |
 | `stock_ledger.csv` | 237,230 | One stock movement (IN / OUT / ADJUSTMENT) | `movement_id` | products, branches, PO/SO |
 
-**Coverage:** orders 01-Jan-2019 → 31-Dec-2024 · payments to Mar-2025 · stock ledger to Jan-2025. Full column-level dictionary: [`data/dictionary/data_dictionary.md`](data/dictionary/data_dictionary.md).
+**Coverage:** orders 01-Jan-2019 → 31-Dec-2024 · payments to Mar-2025 · stock ledger to Jan-2025. Full column-level dictionary: [`data/dictionary/data_dictionary.md`](heavy-warehouse-intelligence/data/dictionary/data_dictionary.md).
 
 ### Entity-relationship map
 
@@ -139,8 +152,7 @@ erDiagram
 * Supplier `pincode` values are 6-digit Indian format on Chinese addresses → treat as synthetic, don't geocode.
 * All suppliers are China-based → 100 % import dependency; `import_duty_rate` becomes a landed-cost driver.
 
----
-
+<img src="https://raw.githubusercontent.com/Eswar5313/Eswar5313/main/assets/divider.svg" width="100%" alt="" />
 ## 5. KPI Framework (headline)
 
 | Domain | KPI | Definition |
@@ -159,10 +171,9 @@ erDiagram
 | Customer | DSO | Avg. days invoice → payment |
 | Finance | Collection rate | Paid ÷ Invoiced |
 
-Full register with formulas, source tables, owners and targets: [`docs/02_kpi_framework.md`](docs/02_kpi_framework.md) and the `03_KPI_Framework` sheet of the control book.
+Full register with formulas, source tables, owners and targets: [`docs/02_kpi_framework.md`](heavy-warehouse-intelligence/docs/02_kpi_framework.md) and the `03_KPI_Framework` sheet of the control book.
 
----
-
+<img src="https://raw.githubusercontent.com/Eswar5313/Eswar5313/main/assets/divider.svg" width="100%" alt="" />
 ## 6. 12-Week Roadmap
 
 | Phase | Weeks | Focus | Key deliverables |
@@ -172,21 +183,19 @@ Full register with formulas, source tables, owners and targets: [`docs/02_kpi_fr
 | 3 · Supplier / Customer / Predictive | 7–9 | Supplier reliability & risk, RFM, CLV, churn, demand forecasting, stockout & reorder prediction | Supplier scorecard, customer segments, forecasting model (Prophet/XGBoost), reorder-point engine |
 | 4 · BI & Strategy | 10–12 | Dashboards, KPI framework, anomaly detection, strategy recommendations, final presentation | 5 dashboards, anomaly monitor, strategy deck, final README portfolio |
 
-Detailed week-by-week plan: [`docs/05_roadmap.md`](docs/05_roadmap.md).
+Detailed week-by-week plan: [`docs/05_roadmap.md`](heavy-warehouse-intelligence/docs/05_roadmap.md).
 
----
-
+<img src="https://raw.githubusercontent.com/Eswar5313/Eswar5313/main/assets/divider.svg" width="100%" alt="" />
 ## 7. Weekly Delivery Log
 
 | Week | Sprint goal | Scrum Master | Status | Link |
 |-----:|-------------|--------------|--------|------|
-| 01 | Profile all 12 tables, agree KPIs, set up repo & control book | Eswar | 🟡 In progress | [`sprints/week-01`](sprints/week-01/SPRINT_NOTES.md) |
-| 02 | Cleaning rules + star schema + data dictionary v1 | Analyst 1 | ⚪ Planned | [`sprints/week-02`](sprints/week-02/SPRINT_NOTES.md) |
-| 03 | Feature engineering + validation suite + first KPI pack | Analyst 2 | ⚪ Planned | [`sprints/week-03`](sprints/week-03/SPRINT_NOTES.md) |
+| 01 | Profile all 12 tables, agree KPIs, set up repo & control book | Eswar | 🟡 In progress | [`sprints/week-01`](heavy-warehouse-intelligence/sprints/week-01/SPRINT_NOTES.md) |
+| 02 | Cleaning rules + star schema + data dictionary v1 | Analyst 1 | ⚪ Planned | [`sprints/week-02`](heavy-warehouse-intelligence/sprints/week-02/SPRINT_NOTES.md) |
+| 03 | Feature engineering + validation suite + first KPI pack | Analyst 2 | ⚪ Planned | [`sprints/week-03`](heavy-warehouse-intelligence/sprints/week-03/SPRINT_NOTES.md) |
 | 04–12 | see `docs/05_roadmap.md` | rotating | ⚪ Planned | |
 
----
-
+<img src="https://raw.githubusercontent.com/Eswar5313/Eswar5313/main/assets/divider.svg" width="100%" alt="" />
 ## 8. Getting Started
 
 ```bash
@@ -204,8 +213,7 @@ db = load_all()                   # dict of 12 pandas DataFrames, typed & date-p
 db["stock_ledger"].head()
 ```
 
----
-
+<img src="https://raw.githubusercontent.com/Eswar5313/Eswar5313/main/assets/divider.svg" width="100%" alt="" />
 ## 9. Working Agreements
 
 * **Branching:** `main` (protected) ← `week-XX/<task-slug>` feature branches via PR; one approval required.
@@ -215,14 +223,29 @@ db["stock_ledger"].head()
 * **Meetings:** Mon planning (30 min) · Wed stand-up (15 min) · Fri review + retro (30 min); notes in `SPRINT_NOTES.md`.
 * **Submission:** every Friday the Scrum Master tags `vWeek-XX`, pushes, and pastes the repo link into the CadetX portal.
 
----
-
+<img src="https://raw.githubusercontent.com/Eswar5313/Eswar5313/main/assets/divider.svg" width="100%" alt="" />
 ## 10. Tech Stack
 
 `Python 3.10` · `pandas` · `numpy` · `scikit-learn` · `statsmodels` · `prophet` · `xgboost` · `plotly` · `matplotlib` · `seaborn` · `openpyxl` · `duckdb` (SQL over CSV) · `Power BI` · `Jupyter` · `GitHub Actions`
 
----
-
+<img src="https://raw.githubusercontent.com/Eswar5313/Eswar5313/main/assets/divider.svg" width="100%" alt="" />
 ## 11. Licence & Acknowledgements
 
 Dataset © CadetX, supplied for educational use within the Virtual Work Experience programme. Code released under the MIT Licence. Built by the HWI team as part of the *Heavy Supplier, Inventory & Warehouse Analytics* project.
+
+<img src="https://raw.githubusercontent.com/Eswar5313/Eswar5313/main/assets/divider.svg" width="100%" alt="" />
+
+<div align="center">
+
+**Eswar Mahalingam** · B.Com · MBA · PGDLSCM · CSCMP SCPro · Six Sigma Black Belt
+Data Scientist @ Zidio Development · Ghaziabad NCR, India · Open to India · EU (Blue Card) · Gulf · Immediate joiner
+
+[![LinkedIn](https://img.shields.io/badge/✦-LINKEDIN-000000?style=for-the-badge&labelColor=C9CDD6)](https://linkedin.com/in/eswar-mahalingam)
+[![Email](https://img.shields.io/badge/✦-EMAIL-000000?style=for-the-badge&labelColor=FFFFFF)](mailto:eswarmba05313@gmail.com)
+[![Phone](https://img.shields.io/badge/✦-+91_9360548243-000000?style=for-the-badge&labelColor=C9CDD6)](tel:+919360548243)
+[![Portfolio](https://img.shields.io/badge/✦-PORTFOLIO_SITE-000000?style=for-the-badge&labelColor=FFFFFF)](https://eswar-3d-portfolio.netlify.app)
+[![Profile](https://img.shields.io/badge/⬅-CAREER_CONTROL_TOWER-000000?style=for-the-badge&labelColor=FFFFFF)](https://github.com/Eswar5313)
+
+<img src="https://raw.githubusercontent.com/Eswar5313/Eswar5313/main/assets/kailash-footer.svg" width="100%" alt="" />
+
+</div>
